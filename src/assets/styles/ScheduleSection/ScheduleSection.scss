@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.ss-container {
+  // background-color: mediumaquamarine;
+  .ss-row {
+    // background-color: salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .ss-col {
+      // background-color: darkgoldenrod;
+      //   border: 2px solid black;
+      .ss-card-container {
+        // background-color: chartreuse;
+      }
+    }
+  }
+}
+
+.ss-col-breaker {
+  width: 2px;
+  background-color: $secondary;
+}

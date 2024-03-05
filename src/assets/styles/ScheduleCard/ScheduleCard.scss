@@ -1,0 +1,121 @@
+@import "../variables.scss";
+
+.sc-card {
+  // background-color: yellow;
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 767px) {
+    margin-bottom: -5rem;
+  }
+  .sc-card-username-container {
+    // background-color: lavender;
+    display: flex;
+    // justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+    .sc-card-username-circle {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+    .sc-card-username-name {
+      color: $secondary;
+      text-transform: capitalize;
+      font-weight: 700;
+      font-family: "josefin sans";
+      margin-left: 0.7rem;
+      margin-top: 1.4rem;
+    }
+  }
+  .sc-card-videocard {
+    width: 100%;
+    height: 250px;
+    @media (max-width: 1199px) {
+      width: 150%;
+    }
+    @media (max-width: 991px) {
+      width: 280%;
+      height: 220px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 220px;
+    }
+    @media (max-width: 500px) {
+      height: 200px;
+    }
+    @media (max-width: 450px) {
+      width: 120%;
+    }
+    @media (max-width: 398px) {
+      width: 140%;
+    }
+    @media (max-width: 368px) {
+      width: 160%;
+    }
+    @media (max-width: 340px) {
+      width: 180%;
+    }
+  }
+  .sc-card-para {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $black-3;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    @media (max-width: 1199px) {
+      width: 180%;
+    }
+    @media (max-width: 991px) {
+      width: 280%;
+    }
+    @media (max-width: 767px) {
+      width: 120%;
+    }
+    @media (max-width: 450px) {
+      width: 140%;
+    }
+    @media (max-width: 398px) {
+      width: 160%;
+    }
+    @media (max-width: 360px) {
+      width: 180%;
+    }
+    @media (max-width: 340px) {
+      width: 200%;
+    }
+  }
+  .sc-card-btn {
+    @media (max-width: 1199px) {
+      width: 169%;
+      margin-left: -2rem;
+    }
+    @media (max-width: 991px) {
+      width: 280%;
+      margin-left: -7rem;
+    }
+    @media (max-width: 767px) {
+      width: 120%;
+      margin-left: 0;
+    }
+    @media (max-width: 398px) {
+      width: 180%;
+      margin-left: -2rem;
+    }
+    @media (max-width: 398px) {
+      width: 180%;
+      margin-left: -2rem;
+    }
+    @media (max-width: 360px) {
+      margin-left: -3rem;
+    }
+    @media (max-width: 340px) {
+      margin-left: -5rem;
+    }
+  }
+}

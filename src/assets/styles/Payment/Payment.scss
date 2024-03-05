@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.payment {
+  //   background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.payment-top {
+  font-size: 1.6rem;
+  color: $black-3;
+  font-weight: 700;
+  text-align: center;
+}
+.payment-btn {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.payment-price {
+  img {
+    width: 100%;
+  }
+  @media (max-width: 500px) {
+    width: 350px;
+  }
+  @media (max-width: 400px) {
+    width: 300px;
+  }
+  @media (max-width: 350px) {
+    width: 270px;
+  }
+}

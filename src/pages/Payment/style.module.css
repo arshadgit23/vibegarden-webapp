@@ -1,0 +1,30 @@
+.form {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form > label {
+    font-size: 1.8rem;
+}
+
+.form > div {
+    width: 40%;
+    border: solid 1px grey;
+}
+
+.form button {
+    background-color: green;
+    padding: .2vh 1vw;
+    border-radius: 2vw;
+    border: none;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .form > div {
+        width: 100%;
+    }
+}

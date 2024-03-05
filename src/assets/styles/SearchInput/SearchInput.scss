@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+.search-input {
+  padding: 1.2rem 11rem 1.2rem 1.7rem;
+  width: 40%;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  border-radius: 6rem;
+  font-family: "josefin sans";
+  @media (max-width: 1199px) {
+    width: 55%;
+  }
+  @media (max-width: 991px) {
+    width: 70%;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 400px) {
+    width: 97%;
+  }
+}
+
+.search-input-container {
+  position: relative;
+  // background-color: darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input-btn {
+  position: absolute;
+  right: 31%;
+  @media (max-width: 1199px) {
+    right: 23.5%;
+  }
+  @media (max-width: 991px) {
+    right: 16%;
+  }
+  @media (max-width: 768px) {
+    right: 7%;
+  }
+}

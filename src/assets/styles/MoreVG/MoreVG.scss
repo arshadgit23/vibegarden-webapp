@@ -1,0 +1,31 @@
+@import "../variables.scss";
+
+.mvg {
+  background-image: url("../../images//green-mask.png");
+  padding: 2rem;
+  .mvg-heading {
+    text-align: center;
+    color: $white;
+  }
+  .mvg-container {
+    // background-color: darkblue;
+    .mvg-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: saddlebrown;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+      .mvg-item {
+        // background-color: salmon;
+
+        @media (max-width: 767px) {
+          margin-bottom: 3rem;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

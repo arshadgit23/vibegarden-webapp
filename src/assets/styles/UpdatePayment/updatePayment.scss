@@ -1,0 +1,30 @@
+.update-payment {
+  //   background-color: lemonchiffon;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-family: "josefin sans";
+    color: $black-3;
+    font-size: 4rem;
+    text-align: center;
+    // margin-top: 5rem;
+  }
+  p {
+    font-family: "josefin sans";
+    color: $black-3;
+    // font-size: 4rem;
+    text-align: center;
+  }
+  &-form-container {
+    // background-color: cadetblue;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    p {
+      text-align: left;
+    }
+  }
+}

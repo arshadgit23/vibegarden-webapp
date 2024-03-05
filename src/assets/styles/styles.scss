@@ -1,0 +1,418 @@
+@import "./NavBar/NavBar.scss";
+@import "./variables.scss";
+@import "./Hero/hero.scss";
+@import "./SelectAvatar/select-avatar.scss";
+@import "./HomeLoggedIn/HomeLoggedIn.scss";
+@import "./GradientImageInfoSection/GradientImageInfoSection.scss";
+@import "WhiteImageInfoSection/WhiteImageInfoSecion.scss";
+@import "./Button/button.scss";
+@import "./Container/Container.scss";
+@import "./VideoCard/videocard.scss";
+@import "./howItWorks/howItWorks.scss";
+@import "./fourColumnInfoSection/fourColumnInfoSection.scss";
+@import "./LineBreak/lineBreak.scss";
+@import "./SampleTools/SampleTools.scss";
+@import "./VideoCardSmall/VideoCardSmall.scss";
+@import "./VideoShiftedCard/VideoShiftedCard.scss";
+@import "./MoreVG/MoreVG.scss";
+@import "./WhiteInfoCard/WhiteInfoCard.scss";
+@import "./RectangularVideoCard/RectangularVideoCard.scss";
+@import "./StayInTouch/stayInTouch.scss";
+@import "./IndividualGroundWork/individualGroundWork.scss";
+@import "./variables.scss";
+@import "./VidCard/vidcard.scss";
+@import "./Footer/Footer.scss";
+@import "./CheckBoxList/CheckBoxList.scss";
+@import "./JoinUs/joinus.scss";
+@import "./EmptyVideoCard/EmptyVideoCard.scss";
+@import "./PaymentPlanCard/PaymentPlanCard.scss";
+@import "./FormInputAuth.scss/FormInputAuth.scss";
+@import "./DatePicker/DatePicker.scss";
+@import "./Payment/Payment.scss";
+@import "./ThankYou/ThankYou.scss";
+@import "./SearchPage/SearchPage.scss";
+@import "./Login/login.scss";
+@import "./pinCodeInput/pinCodeInput.scss";
+@import "./email-confirmation/email-confirmation.scss";
+@import "./GroundWorkEssentials/GroundWorkEssentials.scss";
+@import "./ColoredLink/ColoredLink.scss";
+@import "./ThreeColumnWhiteVideoInfoLayout/ThreeColumnWhiteVideoInfoLayout.scss";
+@import "./BrowseByTags/BrowseByTags.scss";
+@import "./BigImageSection/bigImageSection.scss";
+@import "./SearchInput/SearchInput.scss";
+@import "./Schedule/schedule.scss";
+@import "./FeaturedTools/FeaturedTools.scss";
+@import "./AboutUs/about-us.scss";
+@import "./Modal/Modal.scss";
+@import "./UserButton/userbutton.scss";
+@import "./GroundWork/GroundWork.scss";
+@import "./FourColumnVideoLayout/FourColumnVideoLayout.scss";
+@import "./updatePassword/updatePassword.scss";
+@import "./ScheduleCard/ScheduleCard.scss";
+@import "./VideoCardSlider/VideoCardSlider.scss";
+@import "./ButtonAndHeading/ButtonAndHeading.scss";
+@import "./ProfileScreen/ProfileScreen.scss";
+@import "./AppDownload/AppDownload.scss";
+@import "./TeacherInfo/TeacherInfo.scss";
+@import "./ScheduleSection/ScheduleSection.scss";
+@import "./Teachers/Teachers.scss";
+@import "./Topic/Topic.scss";
+@import "./Resonance/resonance.scss";
+@import "./ResonanceFinder/resonanceFinder.scss";
+@import "./BloomCheck/bloomcheck.scss";
+@import "./BloomResult/bloomresult.scss";
+@import "./UpdatePayment/updatePayment.scss";
+@import "./CancelSubscription/cancelsubscription.scss";
+@import "./ToolsToTry/toolstotry.scss";
+@import "./ResonanceQuestion/ResonanceQuestion.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/brandon-grotesque-regular");
+
+// font-family: 'Brandon Grotesque Regular', sans-serif;
+// font-family: 'Brandon Grotesque Thin', sans-serif;
+// font-family: 'Brandon Grotesque Light', sans-serif;
+// font-family: 'Brandon Grotesque Medium', sans-serif;
+// font-family: 'Brandon Grotesque Bold', sans-serif;
+// font-family: 'Brandon Grotesque Black', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "lato";
+}
+h2 {
+  font-size: 4.8rem;
+  // font-family: "josefin sans";
+  font-family: "Brandon Grotesque Bold", sans-serif;
+
+  @media (max-width: 1000px) {
+    font-size: 4.2rem;
+  }
+}
+h3 {
+  font-size: 3.6rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 1.5;
+  @media (max-width: 1000px) {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+button {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+// a {
+//   text-decoration: none;
+//   border: none;
+//   &:hover{
+//     text-decoration: none;
+//     border: none;
+//   }
+// }
+.py70 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.px70 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.mx70 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.my70 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.py80 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.px80 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.py90 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.px90 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+.py100 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.px100 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.my80 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.mx70 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.my70 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.mx80 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.my90 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.mx90 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+.my100 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.mx100 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.auto-margin-horizontal {
+  margin: 0 auto;
+}
+.bg-gradient-green {
+  background: rgb(122, 176, 58);
+  background: linear-gradient(
+    37deg,
+    rgba(122, 176, 58, 1) 0%,
+    rgba(32, 95, 46, 1) 90%
+  );
+}
+.bg-gradient-pink {
+  background: rgb(237, 83, 94);
+  background: linear-gradient(
+    121deg,
+    rgba(237, 83, 94, 1) 29%,
+    rgba(205, 37, 141, 1) 75%
+  );
+}
+.bg-gradient-pinkMask {
+  background-image: url("../images/pink-mask.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-gradient-blueflowers {
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-gradient-greenMask {
+  background-image: url("../images/green-mask.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-greenMask-light {
+  background-image: url("../images/bg-light-ad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-flowers {
+  background-image: url("../images/flowers-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-lightGreen {
+  background-color: rgba($secondary, 0.15);
+}
+.bg-lightGreenMask {
+  background-image: url("../images/light-green-mask.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-lightPink {
+  background-color: rgba($primary, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-lightFlower {
+  background-image: url("../images/light-flower-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.groundwork .bg-lightFlower,
+.tools .bg-lightFlower,
+.guides .bg-lightFlower,
+.community-garden .bg-lightFlower {
+  background-size: contain;
+}
+
+.text-end {
+  text-align: end;
+}
+.text-white {
+  color: $white !important;
+}
+.text-black {
+  color: $black !important;
+}
+.text-green {
+  color: $secondary !important;
+  font-weight: 700;
+}
+.center-align {
+  align-self: center;
+}
+.left-green-heading {
+  color: $secondary;
+  margin-bottom: 3rem;
+  // font-weight: 700;
+}
+.left-aligned-para {
+  color: $black-3;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+.heading-line {
+  // background-color: darkgoldenrod;
+  display: flex;
+  align-items: center;
+  .hl-heading {
+    // background-color: darkcyan;
+    width: auto;
+    color: $primary;
+    font-size: 3rem;
+    font-family: "josefin sans";
+  }
+  .hl-line {
+    // width: 80%;
+    margin-left: 0.6rem;
+    background-color: $primary;
+    height: 2px;
+    flex-grow: 1;
+  }
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.remove-overflow {
+  overflow: hidden;
+}
+
+.please-sign-up-modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.psup {
+  background-color: $white-2;
+  // background-color: salmon;
+  border-radius: 2rem;
+  // -webkit-box-shadow: -2px 2px 17px 0px rgba(0, 0, 0, 0.24);
+  // -moz-box-shadow: -2px 2px 17px 0px rgba(0, 0, 0, 0.24);
+  // box-shadow: -2px 2px 17px 0px rgba(0, 0, 0, 0.24);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 550px;
+  margin-top: 5rem;
+  position: absolute;
+  @media (max-width: 1199px) {
+    height: 450px;
+  }
+  @media (max-width: 560px) {
+    width: 350px;
+  }
+  @media (max-width: 430px) {
+    width: 320px;
+  }
+  @media (max-width: 380px) {
+    width: 300px;
+  }
+  h2 {
+    color: $secondary;
+    font-size: 3.2rem;
+  }
+  p {
+    color: $black;
+    font-weight: 700;
+    text-align: center;
+    width: 70%;
+    line-height: 1.7;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.psup-btn-container {
+  border: 2px solid $primary;
+  border-radius: 30px;
+}
+.psup-circle-img {
+  background-color: $white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -18%;
+  @media (max-width: 570px) {
+    top: -22%;
+  }
+  img {
+    width: 100%;
+  }
+}
+.light-flower-bg {
+}
+.text-center {
+  text-align: center;
+}

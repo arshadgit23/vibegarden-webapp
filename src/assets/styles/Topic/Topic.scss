@@ -1,0 +1,30 @@
+@import "../variables.scss";
+
+.topic-headingAndDesc {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-size: 1.6rem;
+    color: $grey;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 50%;
+    @media (max-width: 1199px) {
+      width: 70%;
+    }
+  }
+}
+
+.topic-slider {
+  margin-top: 5rem;
+}
+
+.topic-slider-single {
+  @media (min-width: 1016px) {
+    display: none;
+  }
+}

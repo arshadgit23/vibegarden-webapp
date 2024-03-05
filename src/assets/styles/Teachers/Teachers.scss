@@ -1,0 +1,143 @@
+@import "../variables.scss";
+
+.teachers {
+  //   background-color: saddlebrown;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+}
+.teahers-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
+.teachers-top {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  @media (max-width: 991px) {
+    padding: 0 2rem;
+  }
+}
+
+.teachers-row {
+  // background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+.teachers-left-col {
+  // background-color: forestgreen;
+  height: 300px;
+  @media (max-width: 991px) {
+    width: 650px;
+    height: 350px;
+  }
+  @media (max-width: 767px) {
+    width: 550px;
+    height: 300px;
+  }
+  @media (max-width: 620px) {
+    width: 500px;
+    height: 260px;
+  }
+  @media (max-width: 550px) {
+    width: 400px;
+    height: 220px;
+  }
+  @media (max-width: 440px) {
+    width: 360px;
+    height: 200px;
+  }
+}
+
+.teachers-right-col {
+  // background-color: lightcoral;
+  width: 62%;
+  @media (max-width: 991px) {
+    width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    width: 90%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  p {
+    color: $black-3;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+.teacher-search {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .teachers-filter-icon {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgba($secondary, 0.2);
+    width: fit-content;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.teachers-info {
+  //   margin: 5rem 0;
+}
+
+.search-box {
+  width: 80%;
+  max-height: 350px;
+  border: 1px solid $secondary;
+  position: absolute;
+  background-color: $white;
+  z-index: 1000;
+  top: 100%;
+  left: 8%;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.search-box-icon {
+  font-size: 3rem;
+  color: $secondary;
+  padding: 0rem 1.2rem;
+  border-radius: 5px;
+  background-color: rgba($secondary, 0.2);
+  width: fit-content;
+}
+.search-box-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.search-box-info {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  h5 {
+    color: $secondary;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.4rem;
+    color: $secondary;
+  }
+}

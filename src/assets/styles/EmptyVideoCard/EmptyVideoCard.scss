@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.evc-container {
+  position: relative;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: -2px 0px 8px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -2px 0px 8px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -2px 0px 8px 3px rgba(0, 0, 0, 0.15);
+  .evc-title {
+    color: $black-3;
+    font-family: "josefin sans";
+    font-size: 22px;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+  }
+  .evc-icon {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 767px) {
+      width: 30%;
+    }
+  }
+  .evc-time {
+    color: $white;
+    font-size: 1.6rem;
+    background-color: $black-3;
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+      padding: 3px 10px;
+    }
+  }
+}

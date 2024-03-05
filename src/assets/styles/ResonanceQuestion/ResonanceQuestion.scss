@@ -1,0 +1,62 @@
+.resonance-question {
+  background-color: rgba($secondary, 0.3);
+  height: 5rem;
+  //   width: 60%;
+  //   width: ;
+  display: flex;
+  align-items: center;
+  color: $secondary;
+  justify-content: space-between;
+  padding: 0 2rem 0 0;
+  cursor: pointer;
+  margin: 2rem 2rem 2rem 0;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  .rq-img {
+    background-color: white;
+    min-width: 6rem;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 4rem;
+    @media (max-width: 1199px) {
+      margin-right: 2rem;
+    }
+
+    &-container {
+      // background-color: yellow;
+      img {
+        // background-color: chocolate;
+      }
+    }
+  }
+  .rq-text {
+    // background-color: coral;
+    p {
+      font-size: 1.6rem;
+      font-family: "josefin sans";
+      line-height: 1.2;
+      margin-top: 1rem;
+
+      font-weight: 400;
+      //   line-height: ;
+    }
+  }
+}
+
+.rq-checked {
+  background-color: $secondary;
+  color: white;
+  flex-direction: row-reverse;
+  padding-left: 2rem;
+  transition: all 0.5s ease;
+}
+.rq-img-checked {
+  margin-right: -2.1rem !important;
+  @media (max-width: 1299px) {
+    margin-left: 0.5rem;
+  }
+}

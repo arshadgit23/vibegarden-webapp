@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.thankyou {
+  //   background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .thankyou-img {
+    width: 180px;
+    img {
+      width: 100%;
+    }
+  }
+  .thankyou-heading {
+    font-family: "josefin sans";
+    margin-top: 4rem;
+  }
+  .thankyou-desc {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    @media (max-width: 420px) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .thankyou-details {
+    color: $secondary;
+    font-family: "josefin sans";
+    font-weight: 700;
+    margin-bottom: 4rem;
+    @media (max-width: 420px) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}

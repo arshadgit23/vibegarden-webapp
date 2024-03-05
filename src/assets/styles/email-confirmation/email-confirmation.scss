@@ -1,0 +1,69 @@
+@import "../variables.scss";
+
+.ec {
+  //   background-color: lightcoral;
+  //   width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &-container {
+    // margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: lightgreen;
+    .ec-heading {
+      font-family: "josefin sans";
+      color: $black-3;
+      margin-bottom: 2.5rem;
+    }
+    .ec-para {
+      //   font-family: "josefin sans";
+      max-width: 50%;
+      text-align: center;
+      margin-bottom: 4rem;
+      color: $grey;
+      font-weight: 700;
+      @media (max-width: 500px) {
+        max-width: 80%;
+      }
+    }
+    .ec-btn-container {
+      margin-top: 5rem;
+    }
+  }
+}
+
+.ec-icon {
+  background-color: rgba(27, 91, 47, 0.1);
+  // display: inline
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 0.5rem;
+  // border-bottom-left-radius: 1rem;
+  // border-top-left-radius: 1rem;
+  // border-bottom-right-radius: 2rem
+  border-radius: 0.5rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .icon {
+    transform: rotate(-45deg);
+  }
+}
+
+.resend-otp {
+  font-family: "josefin sans";
+  margin-top: 1.4rem;
+  color: #1492e6;
+  font-size: 1.6rem;
+  cursor: pointer;
+}

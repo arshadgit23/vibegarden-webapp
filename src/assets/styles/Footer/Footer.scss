@@ -1,0 +1,289 @@
+@import "../variables.scss";
+
+.footer {
+  background-color: $secondary;
+  padding: 7rem 0 0.5rem 0;
+  .footer-container {
+    .footer-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 991px) {
+        justify-content: flex-start;
+      }
+      @media (max-width: 767px) {
+        justify-content: center;
+      }
+      .footer-col-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        @media (max-width: 991px) {
+          margin-bottom: 4rem !important;
+        }
+        .footer-logo {
+        }
+        .footer-para {
+          font-size: 1.6rem;
+          color: $white;
+          text-align: center;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          width: 70%;
+          @media (max-width: 1199px) {
+            width: 90%;
+          }
+        }
+        .footer-button {
+          background-color: $white;
+          border: none;
+          outline: none;
+          padding: 0.7rem 2.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3rem;
+          margin-bottom: 1.3rem;
+          font-size: 1.6rem;
+          color: $black-3;
+          width: 23rem;
+          img {
+            margin-bottom: 0.5rem;
+            margin-right: 1.5rem;
+          }
+        }
+        .footer-app-btn {
+          color: $white;
+        }
+      }
+      .footer-links-col {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 767px) {
+          margin-right: 0rem;
+        }
+        @media (max-width: 575px) {
+          align-self: center;
+          width: 70%;
+          margin-right: 0;
+          margin-left: 0;
+        }
+        justify-content: center;
+        .footer-list-heading {
+          font-size: 2.5rem;
+          width: fit-content;
+          font-family: "josefin sans";
+          color: $white;
+          margin-bottom: 1rem;
+          margin-left: 5rem;
+          @media (max-width: 767px) {
+            margin-left: 0;
+          }
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+          width: 75%;
+          margin-left: 5rem;
+          @media (max-width: 767px) {
+            margin-left: 0;
+            width: 100%;
+          }
+          @media (max-width: 500px) {
+          }
+          @media (max-width: 400px) {
+          }
+          li {
+            width: fit-content;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $white;
+            margin-bottom: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .footer-links-col-2 {
+        position: relative;
+        left: -5.5rem;
+        // top: -0.5rem;
+        padding: 0;
+        @media (max-width: 1199px) {
+          left: -3rem;
+          top: -1.3rem;
+        }
+        @media (max-width: 767px) {
+          left: 0;
+          top: 0;
+          width: 40%;
+        }
+        @media (max-width: 450px) {
+          margin-left: 2rem;
+        }
+      }
+      .footer-links-col-1 {
+        position: relative;
+        @media (max-width: 767px) {
+          width: 40%;
+        }
+      }
+      .footer-form-col {
+        position: relative;
+        top: 1.5rem;
+        @media (max-width: 991px) {
+          margin-left: 3rem;
+        }
+        // background-color: saddlebrown;
+        @media (max-width: 767px) {
+          max-width: 80%;
+          margin-top: 2rem;
+        }
+
+        @media (max-width: 575px) {
+          margin-left: 2rem !important;
+          max-width: 70%;
+        }
+        @media (max-width: 400px) {
+        }
+        .footer-form-heading {
+          font-size: 2.5rem;
+          font-family: "josefin sans";
+          color: $white;
+          margin-bottom: 1rem;
+          @media (max-width: 767px) {
+            text-align: center;
+          }
+        }
+        .footer-form-para {
+          color: $white;
+          font-size: 1.6rem;
+          letter-spacing: 2px;
+          margin-top: 2.5rem;
+          margin-bottom: 2rem;
+          @media (max-width: 767px) {
+            text-align: center;
+          }
+        }
+        .footer-form {
+          .footer-form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            input {
+              padding: 1rem;
+              font-size: 1.6rem;
+              color: $black-3;
+              font-family: "josefin sans";
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-second-row {
+  margin-top: 6rem;
+  justify-content: space-between;
+  padding-left: 5.5rem;
+  @media (max-width: 1399px) {
+    padding-left: 3.5rem;
+  }
+  @media (max-width: 1199px) {
+    padding-left: 1rem;
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer-payments {
+  width: 35rem;
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 100%;
+    @media (max-width: 400px) {
+      width: 80%;
+    }
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+  li {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    list-style: none;
+    cursor: pointer;
+  }
+}
+
+.footer-line-break {
+  height: 1px;
+  background-color: $white-3;
+  margin: 1rem 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: $white-3;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  position: relative;
+
+  .copyright-icon {
+    display: inline-block;
+    position: absolute;
+    left: 34%;
+    bottom: 10%;
+    @media (max-width: 1399px) {
+      left: 31%;
+      bottom: 8%;
+    }
+    @media (max-width: 1199px) {
+      left: 28%;
+    }
+    @media (max-width: 991px) {
+      left: 22%;
+    }
+    @media (max-width: 768px) {
+      left: 13%;
+    }
+    @media (max-width: 524px) {
+      left: 10%;
+    }
+    @media (max-width: 490px) {
+      left: 7%;
+    }
+    @media (max-width: 450px) {
+      left: 4%;
+    }
+    @media (max-width: 420px) {
+      visibility: hidden;
+    }
+  }
+}
+
+.footer-form-btn {
+  @media (max-width: 767px) {
+    text-align: center;
+    width: 100%;
+  }
+}

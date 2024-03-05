@@ -1,0 +1,141 @@
+@import "../variables.scss";
+
+.tcwvil {
+  // background-color: darkgoldenrod;
+
+  .tcwvil-titleAndIcon {
+    display: flex;
+    // background-color: darkcyan;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    // margin-top: -2rem;
+    h5 {
+      //   position: absolute;
+      // color: $white;
+      // margin-left: -10%;
+      // margin-top: -8%;
+      margin-left: 1rem;
+      color: $secondary;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    // img {
+    //   width: 30%;
+    //   //   border: 2px solid black;
+    // }
+  }
+  .tcwvil-para {
+    // background-color: lavenderblush;
+    // margin-top: -4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $black-3;
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  .tcwvil-card {
+    // background-color: greenyellow;
+    padding: 2rem;
+    box-shadow: -2px 0px 8px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -2px 0px 8px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -2px 0px 8px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      width: 70%;
+    }
+    @media (max-width: 650px) {
+      width: 80%;
+    }
+    @media (max-width: 550px) {
+      width: 90%;
+    }
+  }
+  .tcwvil-video {
+    position: relative;
+    height: 210px;
+    @media (max-width: 820px) {
+      height: 180px;
+    }
+    @media (max-width: 768px) {
+      width: 70%;
+      height: 250px;
+    }
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+    @media (max-width: 420px) {
+      height: 230px;
+    }
+    @media (max-width: 350px) {
+      height: 200px;
+    }
+    .tcwvil-video-image {
+      width: 100%;
+    }
+    .tcwvil-video-icon {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .tcwvil-video-title {
+      position: absolute;
+      top: 2%;
+      left: 4%;
+    }
+    .tcwvil-video-time {
+      color: $white;
+      font-size: 1.6rem;
+      background-color: $black-3;
+      display: inline;
+      padding: 5px 15px;
+      border-radius: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 6%;
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+        padding: 3px 10px;
+      }
+    }
+  }
+  .tcwvil-subtext-container {
+    display: flex;
+    margin-top: 1rem;
+    p {
+      font-family: "josefin sans";
+      font-size: 1.4rem;
+      color: $black-3;
+      font-weight: 700;
+      margin-right: 1rem;
+    }
+  }
+  .tcwvil-btn {
+    align-self: center;
+    margin-top: 2rem;
+  }
+}
+
+.tcwvil-icon {
+  width: 45px;
+  img {
+    width: 100%;
+  }
+}
+
+.tcwvil-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

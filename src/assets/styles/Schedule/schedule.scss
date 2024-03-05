@@ -1,0 +1,292 @@
+@import "../variables.scss";
+
+.teacher-schedule-info {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  .teacher-heading {
+    color: $secondary;
+    font-family: "josefin sans";
+    margin-bottom: 2rem;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  .teacher-row {
+    display: flex;
+    align-items: center;
+    // background-color: lawngreen;
+    @media (max-width: 991px) {
+      align-items: flex-start;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+    @media (max-width: 576px) {
+      padding: 0 3rem;
+    }
+    .teacher-img-col {
+      // background-color: cadetblue;
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .teacher-image {
+      border-radius: 20px;
+      // background-color: salmon;
+      width: 84%;
+      // height: 85%;
+      height: 360px;
+      @media (max-width: 1399px) {
+        height: 300px;
+      }
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+      @media (max-width: 991px) {
+        width: 90%;
+      }
+      @media (max-width: 767px) {
+        width: 60%;
+      }
+      @media (max-width: 576px) {
+        width: 70%;
+      }
+      @media (max-width: 500px) {
+        width: 80%;
+      }
+      @media (max-width: 430px) {
+        width: 90%;
+      }
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .teacher-desc {
+    color: $black-3;
+    font-size: 1.6rem;
+    font-family: "josefin sans";
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: -3rem;
+    line-height: 1.7;
+    @media (max-width: 1199px) {
+      margin-left: 2rem;
+    }
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+    @media (max-width: 767px) {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.teacher-schedule-video {
+  width: 900px;
+  height: 550px;
+  margin: 7rem auto;
+  @media (max-width: 1199px) {
+    width: 800px;
+    height: 500px;
+  }
+  @media (max-width: 991px) {
+    width: 700px;
+    height: 450px;
+  }
+  @media (max-width: 767px) {
+    width: 600px;
+    height: 400px;
+  }
+  @media (max-width: 650px) {
+    width: 500px;
+    height: 350px;
+  }
+  @media (max-width: 550px) {
+    width: 450px;
+    height: 300px;
+    margin: 4rem auto;
+  }
+  @media (max-width: 480px) {
+    width: 400px;
+    height: 260px;
+  }
+  @media (max-width: 430px) {
+    width: 350px;
+    height: 220px;
+  }
+  @media (max-width: 378px) {
+    width: 320px;
+    height: 200px;
+  }
+  @media (max-width: 348px) {
+    width: 290px;
+    height: 180px;
+  }
+}
+
+.schedule-left {
+  // background-color: sandybrown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-btn {
+    // background-color: salmon;
+    width: 80%;
+    padding-left: 0.7rem;
+    margin-top: 3rem;
+    @media (max-width: 1008px) {
+      padding-left: 0;
+      width: 85%;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+  }
+}
+.schedule-heading {
+  // align-self: flex-start;
+  // background-color: saddlebrown;
+  width: 80%;
+  font-family: "josefin sans";
+  font-weight: 700;
+  margin-bottom: 3rem;
+  @media (max-width: 767px) {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+.schedule-right {
+  // background-color: lightcoral;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .schedule-heading {
+  //   margin: 0 auto;
+  //   margin-bottom: 3rem;
+  // }
+  .schedule-right-timeSelect {
+    // background-color: mediumaquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $secondary;
+    border-radius: 20px;
+    padding: 4rem 2rem 2rem 0.5rem;
+    width: 80%;
+    .schedule-right-timeBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2rem;
+
+      .item-price {
+        font-family: "josefin sans";
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.schedule-info {
+  font-size: 2.4rem;
+  color: $black-3;
+  font-family: "josefin sans";
+  width: 80%;
+  margin-left: 0.4rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.divider {
+  background-color: rgba($grey, 0.4);
+  height: 2px;
+  width: 80%;
+}
+
+.schedule-time {
+  // background-color: lightgreen;
+  display: flex;
+  width: 80%;
+  margin: 3rem auto;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+
+  h5 {
+    color: $secondary;
+    text-align: center;
+    font-family: "josefin sans";
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .schedule-time-morning {
+    // background-color: sandybrown;
+    margin-right: 5rem;
+    @media (max-width: 991px) {
+      margin-right: 3rem;
+    }
+    @media (max-width: 800px) {
+      margin-right: 2rem;
+    }
+    @media (max-width: 767px) {
+      margin-right: 5rem;
+    }
+    @media (max-width: 400px) {
+      margin-right: 3rem;
+    }
+  }
+  .schedule-time-evening {
+    // background-color: lawngreen;
+  }
+  .schedule-time-btn {
+    margin-bottom: 2rem;
+  }
+}
+
+.schedule-note {
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  @media (min-width: 768px) {
+    margin-left: 4rem;
+  }
+  @media (min-width: 1009px) {
+    margin-left: 6rem;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 8rem;
+  }
+  span {
+    font-size: 2.6rem;
+    color: $secondary;
+    margin-right: 0.3rem;
+    font-weight: 700;
+  }
+}

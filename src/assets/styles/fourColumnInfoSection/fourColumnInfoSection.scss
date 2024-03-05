@@ -1,0 +1,53 @@
+@import "../variables.scss";
+
+.fcis {
+  .fcis-container {
+    padding: 3rem;
+    .fcis-row {
+      @media (max-width: 991px) {
+        justify-content: space-between;
+      }
+      .fcis-item {
+        margin-bottom: 2rem;
+        @media (max-width: 991px) {
+          width: 48%;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        .fcis-item--heading {
+          color: $secondary;
+          font-weight: 700;
+          font-family: "josefin sans";
+        }
+        .fcis-item-para {
+          font-family: "josefin sans";
+          width: 85%;
+          margin-top: 2.5rem;
+          font-size: 1.8rem;
+          @media (max-width: 600px) {
+            font-size: 1.5rem;
+          }
+          color: $black-3;
+          letter-spacing: 1px;
+          margin-bottom: 1rem;
+        }
+        .fcis-item--list {
+          // background-color: saddlebrown;
+          width: 90%;
+          margin-top: 2.5rem;
+          font-family: "josefin sans";
+          .fcis-item--list-item {
+            font-size: 1.8rem;
+            @media (max-width: 600px) {
+              font-size: 1.5rem;
+            }
+            color: $black-3;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

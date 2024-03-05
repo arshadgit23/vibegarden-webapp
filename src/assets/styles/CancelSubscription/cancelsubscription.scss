@@ -1,0 +1,113 @@
+.cs {
+  //   background-color: wheat;
+  width: 100vw;
+  height: 100vh;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0;
+  }
+  .cs-container {
+    // background-color: rosybrown;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      //   background-color: royalblue;
+      font-family: "josefin sans";
+      font-size: 5rem;
+      margin-bottom: 5rem;
+      @media (max-width: 500px) {
+        font-size: 4rem;
+      }
+    }
+    .cs-row {
+      // background-color: lemonchiffon;
+      justify-content: center;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .cs-col {
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+      }
+      .cs-col-1 {
+        // background-color: salmon;
+        @media (max-width: 767px) {
+          width: 70%;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        @media (max-width: 600px) {
+          width: 80%;
+        }
+        @media (max-width: 500px) {
+          width: 90%;
+        }
+        .cs-video {
+          width: 100%;
+          height: 30rem;
+          @media (max-width: 991px) {
+            height: 25rem;
+          }
+          @media (max-width: 767px) {
+            height: 30rem;
+          }
+          @media (max-width: 500px) {
+            height: 25rem;
+          }
+        }
+        p {
+          font-family: "josefin sans";
+          color: $black-3;
+          font-size: 1.6rem;
+          margin-top: 2rem;
+        }
+        .vid-card {
+          p {
+            color: white;
+          }
+        }
+      }
+      .cs-line {
+        background-color: $secondary;
+        height: 100%;
+        width: 1px;
+        margin: auto;
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      .cs-col-3 {
+        // background-color: sandybrown;
+        @media (max-width: 767px) {
+          width: 70%;
+          text-align: center;
+        }
+        @media (max-width: 600px) {
+          width: 80%;
+        }
+        @media (max-width: 500px) {
+          width: 95%;
+        }
+        h5 {
+          font-family: "josefin sans";
+          color: $black-3;
+          font-size: 2.2rem;
+          @media (max-width: 767px) {
+          }
+        }
+      }
+    }
+    .cs-btn {
+      margin-top: 5rem;
+    }
+  }
+}

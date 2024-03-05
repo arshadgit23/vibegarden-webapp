@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.hero {
+  color: $white;
+  padding: 12rem 0rem;
+
+  &-quote {
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    font-family: "josefin sans";
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  &-author {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  &-heading {
+    margin-top: 8rem;
+    font-size: 5.5rem;
+    letter-spacing: 3px;
+  }
+}
+.hero-heading-pad {
+  margin-top: 1rem;
+}
+
+.short-padding {
+  padding: 3rem 0;
+}
+.top-padding {
+  padding: 12rem 0;
+}
+.hero-font-quote {
+  font-size: 3.2rem;
+}
+.hero-font-author {
+  font-size: 1.6rem;
+}
+.hero-font-heading {
+  font-size: 5rem;
+}

@@ -1,0 +1,34 @@
+.searchBar {
+    border-radius: 2vw;
+    border: solid .2vw grey;
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4vw;
+}
+
+.searchBar > input {
+    width: 85%;
+    font-size: 1vw;
+    border: none;
+    font-family: "lato";
+}
+
+.searchBar > input:focus {
+    outline: none;
+    border: none;
+}
+
+.searchBar > svg {
+    font-size: 1.8vw;
+    width: 15%;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3vh;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+}

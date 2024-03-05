@@ -1,0 +1,21 @@
+.bloomInput {
+    margin: 0 1rem;
+    font-weight: 700;
+    color: #848f99;
+    font-size: 2.2rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.bloomInput:focus {
+    border: none;
+    outline: none;
+}
+
+.bloomInput::-webkit-inner-spin-button,
+.bloomInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}

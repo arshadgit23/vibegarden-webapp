@@ -1,0 +1,9 @@
+@import "../variables.scss";
+
+.colored-link {
+  font-size: 2rem;
+  color: $primary;
+  font-family: "josefin sans";
+  font-weight: 700;
+  cursor: pointer;
+}

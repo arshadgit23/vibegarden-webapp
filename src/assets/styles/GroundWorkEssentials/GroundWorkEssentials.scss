@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.ge {
+  //   background-color: saddlebrown;
+  padding: 5rem 0 8rem 0;
+  .ge-container {
+    // background-color: wheat;
+    .ge-heading {
+      color: $secondary;
+    }
+    .ge-para {
+      font-size: 1.4rem;
+      color: $grey;
+      letter-spacing: 1px;
+      max-width: 80%;
+      margin: 2rem auto;
+    }
+    .ge-cards {
+      margin-top: 4rem;
+    }
+  }
+}

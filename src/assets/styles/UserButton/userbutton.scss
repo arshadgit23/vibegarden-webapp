@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.user-btn {
+  //   background-color: darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $primary;
+  border-radius: 40px;
+  position: relative;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  .user-btn-img-container {
+    width: 4rem;
+    height: 4rem;
+    border: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .user-btn-name {
+    color: $primary;
+    position: relative;
+    font-family: "josefin sans";
+    top: 16%;
+    margin-left: 1rem;
+    font-weight: bold;
+    // background-color: darkgoldenrod;
+  }
+  .user-btn-icon {
+    margin-top: 0.2rem;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.sit-heading {
+  color: $primary;
+}
+.sit-para {
+  max-width: 80%;
+  //   font-weight: 700;
+  color: $black-3;
+  letter-spacing: 2px;
+}
+
+.sit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sit-input {
+  padding: 12px;
+  width: 40rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: "josefin sans";
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  @media (max-width: 768px) {
+    width: 30rem;
+  }
+  @media (max-width: 400px) {
+    width: 26rem;
+  }
+}

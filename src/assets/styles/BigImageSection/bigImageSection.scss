@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+.bis {
+  padding-bottom: 5rem;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bis-video-card {
+    width: 50%;
+    height: 40rem;
+
+    @media (max-width: 991px) {
+      width: 80%;
+    }
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+    @media (max-width: 575px) {
+      height: 35rem;
+    }
+    @media (max-width: 490px) {
+      height: 32rem;
+    }
+    @media (max-width: 420px) {
+      height: 30rem;
+    }
+    @media (max-width: 360px) {
+      height: 28rem;
+    }
+  }
+  .bis-heading {
+    color: $secondary;
+  }
+  .bis-para {
+    color: $black-3;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+

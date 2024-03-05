@@ -1,0 +1,145 @@
+.vid-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  // overflow: hidden;
+  .vid-card-heart {
+    background-color: white;
+    padding: 0.9rem 0.5rem 0.9rem 0.5rem;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 2px;
+  }
+
+  .vid-card-plus {
+    background-color: white;
+    padding: 0.9rem 0.5rem 0.9rem 0.5rem;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 2px;
+  }
+
+  .vid-card-image {
+    width: 100%;
+    height: 100%;
+  }
+  .vid-card-titleAndIcon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -2%;
+    left: -5%;
+    .vid-card-title {
+      color: $white;
+      margin-left: -16%;
+      margin-top: -14%;
+      font-family: "josefin sans";
+      font-size: 1.6rem;
+    }
+    img {
+      width: 50%;
+    }
+  }
+
+  .vid-card-topTitle {
+    color: $white;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    letter-spacing: 1px;
+    font-size: 250%;
+    font-family: "josefin sans";
+  }
+
+  .vid-card-video-icon {
+    width: 40%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .vid-card-time {
+    color: $white;
+    font-size: 140%;
+    background-color: $black-3;
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    border: 1px solid rgba($white, 0.4);
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+      padding: 3px 10px;
+    }
+  }
+}
+
+.video-js {
+  // aspect-ratio: 17/9;
+  width: 100%;
+  height: 100%;
+  //   height: auto;
+  display: block;
+  margin: 0 auto;
+  //   border-radius: 10px !important;
+}
+.vjs-poster {
+  // background-color: darkblue !important;
+  // background-size: cover !important;
+}
+
+.vjs-control-bar {
+  background-color: transparent !important;
+  margin-bottom: 0 !important;
+  font-size: 120% !important;
+  @media (max-width: 767px) {
+    // font-size: 200% !important;
+  }
+  @media (max-width: 576px) {
+    // font-size: 1rem !important;
+  }
+}
+.vjs-play-control {
+  margin: 0 !important;
+  font-size: 70% !important;
+}
+.vjs-volume-panel {
+  margin: 0 !important;
+  font-size: 70% !important;
+  position: relative;
+  top: 10%;
+}
+.vjs-remaining-time {
+  margin: 0 !important;
+  font-size: 90% !important;
+}
+.vjs-picture-in-picture-control {
+  display: none !important;
+}
+.vjs-fullscreen-control {
+  font-size: 95% !important;
+  margin: 0 !important;
+}
+// .vjs-load-progress {
+//   background-color: white !important;
+// }
+// .vjs-play-progress {
+//   background-color: #80b963 !important;
+// }
+.vjs-time-control {
+  padding-left: 0 !important;
+  padding-right: 5px !important;
+}
+.vjs-playback-rate {
+  display: none !important;
+}
+.vjs-control-bar {
+}
+.vjs-poster {
+  background-size: 100% !important;
+}

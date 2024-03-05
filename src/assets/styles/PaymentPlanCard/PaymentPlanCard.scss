@@ -1,0 +1,126 @@
+@import "../variables.scss";
+
+.ppcm {
+  //   background-color: wheat;
+  border: 1px solid $secondary;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  // margin-left: 3rem;
+  box-shadow: 2px 3px 27px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 3px 27px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 3px 27px 5px rgba(0, 0, 0, 0.1);
+  @media (max-width: 1199px) {
+    width: 200px;
+    margin-left: 2rem;
+  }
+  @media (max-width: 991px) {
+    width: 180px;
+    margin-left: 1.5rem;
+  }
+  @media (max-width: 854px) {
+    width: 250px;
+    margin-left: 0;
+  }
+  @media (max-width: 767px) {
+    height: 250px;
+    margin-right: 2rem;
+  }
+  @media (max-width: 559px) {
+    // height: 250px;
+    margin-right: 0;
+  }
+
+  // background-color: salmon;
+  .ppcm-heading {
+    font-size: 2rem;
+    color: $secondary;
+    font-family: "josefin sans";
+  }
+  .ppcm-price {
+    font-size: 3.2rem;
+    color: $black-2;
+    margin: 2rem 0;
+    @media (max-width: 1199px) {
+      font-size: 2.8rem;
+    }
+    @media (max-width: 991px) {
+      font-size: 2.5rem;
+    }
+    span {
+      font-weight: 900;
+      font-size: 3.8rem;
+      margin-right: 1rem;
+      @media (max-width: 1199px) {
+        font-size: 3.2rem;
+      }
+      @media (max-width: 991px) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+  .ppcm-info {
+    font-size: 1.7rem;
+    font-weight: 700;
+    // background-color: darkblue;
+    margin-top: 1.8rem;
+    font-family: "josefin sans";
+  }
+}
+
+.ppcy {
+  width: 235px;
+  height: 300px;
+  // background-color: lawngreen;
+  border: 1px solid $secondary;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  margin-left: 3rem;
+  box-shadow: 2px 3px 27px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 3px 27px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 3px 27px 5px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 1199px) {
+    width: 200px;
+    margin-left: 2rem;
+  }
+  @media (max-width: 991px) {
+    width: 180px;
+    margin-left: 1.5rem;
+  }
+  @media (max-width: 854px) {
+    width: 250px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  @media (max-width: 767px) {
+    // height: 250px;
+  }
+  .ppcy-heading {
+    font-size: 2rem;
+    color: $secondary;
+    font-family: "josefin sans";
+  }
+  .ppcy-price {
+    font-size: 3.2rem;
+    color: $black-2;
+    margin: 2rem 0;
+    @media (max-width: 1199px) {
+      font-size: 2.8rem;
+    }
+  }
+  .ppcy-sub-info {
+    font-size: 1.6rem;
+    font-family: "josefin sans";
+  }
+  .ppcy-info {
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: "josefin sans";
+  }
+}

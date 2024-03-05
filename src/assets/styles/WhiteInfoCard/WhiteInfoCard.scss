@@ -1,0 +1,58 @@
+@import "../variables.scss";
+
+.wic {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 1rem;
+  // background-color: darkblue;
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+  .wic-heading {
+    color: $secondary;
+    font-family: "josefin sans";
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  .wic-para {
+    font-size: 16px;
+    color: $black-3;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+.wic-vid-container {
+  align-self: center;
+  width: 100%;
+  height: 220px;
+  @media (max-width: 991px) {
+    height: 160px;
+  }
+  @media (max-width: 767px) {
+    width: 70%;
+    height: 180px;
+  }
+  @media (max-width: 570px) {
+    width: 80%;
+  }
+  @media (max-width: 450px) {
+    height: 160px;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
+  }
+}
+.wic-btn-container {
+  align-self: center;
+  margin-top: 3rem;
+}

@@ -1,0 +1,23 @@
+.vibeGuide {
+    height: 650px;
+    overflow: auto;
+}
+
+.vibeGuide::-webkit-scrollbar {
+    width: 5px;
+}
+
+.vibeGuide::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.vibeGuide::-webkit-scrollbar-thumb {
+    background: linear-gradient(37deg, #7ab03a 0%, #205f2e 90%); 
+    border-radius: 10px;
+}
+
+
+.vibeGuide::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(37deg,#205f2e  0%,#7ab03a  90%); 
+}

@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  .form-group-label {
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+    color: $black-3;
+    font-family: "josefin sans";
+  }
+}
+.checkbox-list {
+}

@@ -1,0 +1,104 @@
+@import "../variables.scss";
+
+.teacher-info {
+  //   background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: saddlebrown;
+  padding: 5rem 0;
+
+  .teacher-info-row {
+    // background-color: aqua;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    @media (max-width: 991px) {
+      padding: 0 3rem;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+}
+
+.teacher-info-leftcol {
+  //   background-color: aquamarine;
+  .teacher-info-imgHeading {
+    // background-color: salmon;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+    .teacher-info-img-container {
+      width: 120px;
+      height: 100px;
+      margin-right: 2rem;
+      border-radius: 20px;
+      background-color: salmon;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .teacher-info-iconPara {
+    // background-color: sandybrown;
+    display: flex;
+    align-items: center;
+
+    margin-top: 2rem;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+    p {
+      font-family: "josefin sans";
+      font-weight: 700;
+      margin-left: 1rem;
+      line-height: 1.5;
+      margin-top: 1.2rem;
+      font-size: 1.55rem;
+      @media (max-width: 767px) {
+        width: 80%;
+      }
+    }
+  }
+}
+.teacher-info-rightcol {
+  // background-color: wheat;
+  height: 270px;
+  // background-color: darkcyan;
+  @media (max-width: 767px) {
+    width: 80%;
+    align-self: center;
+    margin-top: 2rem;
+    height: 320px;
+  }
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+  @media (max-width: 410px) {
+    height: 300px;
+  }
+  @media (max-width: 410px) {
+    height: 260px;
+  }
+}
+
+.teacher-info-slider {
+  // margin: 2rem 0;
+}
+
+.teacher-info-reels {
+  @media (max-width: 575px) {
+    padding: 0 3rem;
+  }
+  h2 {
+    color: $secondary;
+  }
+}

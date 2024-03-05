@@ -1,0 +1,155 @@
+@import "../variables.scss";
+
+.btn-outline {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+  border: 2px solid $primary;
+  color: $primary;
+  padding: 2px 15px;
+  border-radius: 40px;
+  font-family: "josefin sans";
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.btn-filled {
+  background-color: rgba(255, 255, 255, 1);
+  color: $primary;
+  font-family: "josefin sans";
+  outline: none;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  padding: 5px 15px;
+  border-radius: 40px;
+  font-weight: 700;
+  border: 1px solid $primary;
+}
+.btn-green {
+  background-color: $secondary;
+  color: $white;
+  font-family: "josefin sans";
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.btn-green-off {
+  background-color: rgba(#1c5c2e, 0.5);
+  font-size: 1.4rem;
+  color: $white;
+  font-family: "josefin sans";
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  @media (max-width: 480px) {
+    padding: 4px 12px;
+  }
+}
+.btn-green-outline {
+  background-color: $white;
+  color: $black-2;
+  font-family: "josefin sans";
+  outline: none;
+  border: 1px solid $secondary;
+  padding: 5px 15px;
+  border-radius: 25px;
+}
+.btn-light {
+  background-color: rgba($secondary, 0.2);
+  color: $black-2;
+  font-weight: 700;
+  font-family: "josefin sans";
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.pd-x {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.pd-y {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.pd-x-small {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.pd-y-small {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 1.8rem;
+}
+.pd-y-res {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.pd-x-res {
+  padding-left: 60px;
+  padding-right: 60px;
+  @media (max-width: 430px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.pd-x-big {
+  padding-left: 9rem;
+  padding-right: 9rem;
+  @media (max-width: 575px) {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+.wic .btn-filled {
+  @media (max-width: 880px) {
+    font-size: 1.6rem;
+    border-radius: 1.2rem;
+  }
+  @media (max-width: 823px) {
+    padding: 5px 10px;
+  }
+  @media (max-width: 793px) {
+    padding: 5px 8px;
+  }
+}
+
+.time-button {
+  display: flex;
+  // background-color: $white;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid $secondary;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  // &:hover {
+  //   background-color: $secondary;
+  // }
+  p {
+    font-family: "josefin sans";
+    color: $secondary;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  // &:hover p {
+  //   color: $white;
+  // }
+
+  .character {
+    margin: 0 1rem;
+  }
+}
+
+.active-time-btn {
+  background-color: $secondary;
+  border-radius: 10px;
+  p {
+    color: $white;
+  }
+}

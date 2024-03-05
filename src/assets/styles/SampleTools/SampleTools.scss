@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.st {
+  @media (max-width: 991px) {
+    margin-left: 5%;
+  }
+  .st-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    // background-color: sandybrown;
+    .st-heading {
+      text-align: center;
+      color: $secondary;
+    }
+    .st-cards {
+      justify-content: center;
+      @media (max-width: 767px) {
+        position: relative;
+        left: 13%;
+      }
+      @media (max-width: 550px) {
+        position: relative;
+        left: 5%;
+      }
+      .st-card {
+        @media (max-width: 767px) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}

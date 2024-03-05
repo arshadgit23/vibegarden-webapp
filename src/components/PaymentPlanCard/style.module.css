@@ -1,0 +1,11 @@
+.clickedCard {
+  background-color: rgba(0, 128, 0, 0.418);
+}
+
+.selected {
+  background-color: rgba(0, 128, 0, 0.418);
+}
+
+.notSelected {
+  background-color: rgb(255, 255, 255);
+}

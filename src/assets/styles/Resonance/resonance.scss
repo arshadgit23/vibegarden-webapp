@@ -1,0 +1,86 @@
+@import "../variables.scss";
+
+.resonance {
+  // background-color: seagreen;
+  //   width: fit-content;
+  .resonance-container {
+    padding: 5rem 0;
+    // background-color: sandybrown;
+    // width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: 575px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @media (max-width: 480px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .rt-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      //   background-color: salmon;
+      width: 100%;
+      .rt-topleft {
+      }
+      .rt-topright {
+        background-color: $secondary;
+        cursor: pointer;
+        color: white;
+        padding: 1.2rem 1.2rem;
+        font-size: 1.4rem;
+        border-radius: 0.8rem;
+        a {
+          color: white;
+        }
+        @media (max-width: 480px) {
+          padding: 0.8rem 0.8rem;
+        }
+        span {
+          padding: 1px 4px;
+          border: 1px solid white;
+          border-radius: 5px;
+        }
+      }
+    }
+    h4 {
+      color: $secondary;
+      font-weight: 600;
+      font-family: "josefin sans";
+      font-size: 2.6rem;
+      line-height: 1.5;
+      @media (max-width: 480px) {
+        font-size: 2.2rem;
+      }
+      @media (max-width: 370px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 350) {
+        font-size: 1.6rem;
+      }
+    }
+    .resonance-choices {
+      margin-top: 2.5rem;
+      //   background-color: salmon;
+      .resonance-toggle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        // background-color: sandybrown;
+        .rt-label {
+          font-size: 1.4rem;
+          color: $grey-2;
+          margin-left: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .resonance-btn {
+      margin-top: 10rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.modal {
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    margin: auto;
+    padding: 15vh 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 30px #ff545a9a;
+    width: 20%;
+    height: 20px;
+    text-overflow: clip;
+    /* word-break: break-all; */
+    overflow: hidden;
+    font-size: 18px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal > p {
+    text-align: center;
+    width: max-content;
+    word-break: break-all;
+    text-overflow: clip;
+}
+
+.modal > button {
+    background-color: #ff545a;
+    color: white;
+    border: none;
+    border-radius: 3vw;
+    padding: 0 2vw;
+    margin-top: 5%;
+}

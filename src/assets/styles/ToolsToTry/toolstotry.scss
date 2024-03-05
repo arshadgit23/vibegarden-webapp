@@ -1,0 +1,242 @@
+.library-list {
+  padding: 5rem 0;
+  @media (max-width: 991px) {
+    padding: 5rem 4rem;
+  }
+  @media (max-width: 767px) {
+    padding: 3rem;
+  }
+  @media (max-width: 500px) {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 4rem;
+    font-family: "josefin sans";
+    margin-bottom: 4rem;
+    color: $secondary;
+    border-bottom: 1px solid $secondary;
+    padding-bottom: 2rem;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  .library-data {
+    .ld-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      position: relative;
+      // background-color: sandybrown;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+      &-rating {
+        // background: salmon;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: normal;
+        margin-left: 0;
+        margin-top: -0.6rem;
+        p {
+          line-height: normal;
+          font-family: "josefin sans";
+        }
+
+        .ldir-num {
+          // background-color: darkgoldenrod;
+          margin-bottom: 0 !important;
+          margin-right: 0 !important;
+          font-size: 1.7rem !important;
+          color: rgba($secondary, 1) !important;
+          // margin-left: 0.5rem !important;
+        }
+      }
+      //   background-color: salmon;
+      .ld-item-video {
+        width: 35%;
+        height: 20rem;
+        @media (max-width: 1099px) {
+          width: 45%;
+        }
+        @media (max-width: 991px) {
+          width: 85%;
+        }
+        @media (max-width: 767px) {
+          width: 60%;
+        }
+        @media (max-width: 500px) {
+          width: 80%;
+        }
+      }
+      .ld-trash {
+        position: absolute;
+        right: 0;
+      }
+      .ld-item-info {
+        // background-color: gold;
+        width: 70%;
+        @media (max-width: 767px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .ld-item-info-textAndIcon {
+          // background-color: darkcyan;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 3rem;
+          width: fit-content;
+          @media (max-width: 767px) {
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+          .ld-item-info-icon {
+            margin-right: 1rem;
+            width: 3.4rem;
+            img {
+              width: 100%;
+            }
+          }
+          h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+        }
+        .ld-item-info-desc {
+          font-size: 1.6rem;
+          font-weight: 700;
+          margin-left: 3.1rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          width: 60%;
+          @media (max-width: 991px) {
+            width: 70%;
+          }
+          @media (max-width: 767px) {
+            text-align: center;
+            margin-left: 0;
+          }
+          @media (max-width: 767px) {
+            width: 90%;
+          }
+        }
+        .ld-item-info-subtext {
+          display: flex;
+          margin-left: 3rem;
+          p {
+            color: $secondary;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-right: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lds-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  // background-color: salmon;
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+  .ld-item-video {
+    width: 35%;
+    height: 200px;
+    flex-shrink: 0;
+    @media (max-width: 680px) {
+      width: 40%;
+    }
+    @media (max-width: 550px) {
+      width: 60%;
+    }
+    @media (max-width: 480px) {
+      width: 80%;
+    }
+    // @media (max-width: 1199px) {
+    //   width: 45%;
+    // }
+    // @media (max-width: 550px) {
+    //   width: 60%;
+    //   height: 200px;
+    // }
+    // @media (max-width: 450px) {
+    //   width: 70%;
+    // }
+    // @media (max-width: 380px) {
+    //   width: 80%;
+    // }
+    // @media (max-width: 500px) {
+    //   width: 50%;
+    //   height: 200px;
+    // }
+  }
+}
+.lds-item-info {
+  // background-color: darkcyan;
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+.lds-item-info-textAndIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 3rem;
+  width: fit-content;
+  @media (max-width: 550px) {
+    margin-left: 0;
+  }
+  // background-color: darkgoldenrod;
+  .ld-item-info-icon {
+    margin-right: 1rem;
+    width: 3.4rem;
+    img {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+
+.lds-item-info-desc {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 3.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  @media (max-width: 550px) {
+    margin-left: 0;
+    // width: 90%;
+  }
+}
+
+.lds-item-info-subtext {
+  display: flex;
+  margin-left: 3rem;
+  p {
+    color: $secondary;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-right: 2.5rem;
+  }
+}
