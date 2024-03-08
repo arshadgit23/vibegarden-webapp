@@ -625,7 +625,7 @@ const ProfileScreen = () => {
                       <HeadingLine text="Library" />
                     </div>
                     <div className="ps-library-items">
-                      <Link to="/recentcontent">
+                      <Link to="/toolstotry">
                         <div className="ps-library-item">
                           <span>
                             <BsPlusLg size={17} color="rgba(27, 91, 47, 1)" />
@@ -645,7 +645,7 @@ const ProfileScreen = () => {
                         </div>
                       </Link>
 
-                      <Link to="/recentcontent">
+                      <Link to="/favorites">
                         <div className="ps-library-item">
                           <span>
                             <BsHeart size={18} color="rgba(27, 91, 47, 1)" />
@@ -654,7 +654,7 @@ const ProfileScreen = () => {
                         </div>
                       </Link>
 
-                      <Link to="/recentcontent">
+                      <Link to="/toptools">
                         <div className="ps-library-item">
                           <span>
                             <BsStar size={20} color="rgba(27, 91, 47, 1)" />
