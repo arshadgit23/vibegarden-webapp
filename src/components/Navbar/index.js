@@ -17,6 +17,7 @@ import AWS from "../../awsImageURL";
 import AlertModal from "../Modal/AlertModal";
 import images from "../../constants/images";
 import { TiSpiral } from "react-icons/ti";
+import socket from 'socket.io-client'
 
 const NavBar = ({ onlyBrand }) => {
   const dispatch = useDispatch();
@@ -231,7 +232,7 @@ const NavBar = ({ onlyBrand }) => {
                       </Link>
                     </span>
                     <span className="navbar-actions-icon">
-                      {/* <span
+                      <span
                         onClick={() => setShowNotification(!showNotification)}
                       >
                         <IoNotificationsSharp
@@ -240,7 +241,7 @@ const NavBar = ({ onlyBrand }) => {
                           cursor="pointer"
                         />
                       </span>
-                      <span className="notification-dot"></span> */}
+                      <span className="notification-dot"></span>
                     </span>
                     <UserButton
                       userImage={`${AWS.REACT_APP_AWS_URL}${user?.avatar?.image}`}
